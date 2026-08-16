@@ -9,8 +9,15 @@ if modo == "Celsius a Fahrenheit":
     resultado = (temperatura * 9/5) + 32
     st.success(f"**{round(resultado, 2)} ºF**")
     st.caption(f"{temperatura} ºC convertidos a Farenheit")
-else:
+elif modo == "Fahrenheit a Celsius":
     resultado = (temperatura - 32) * 5/9
     st.success(f"**{round(resultado, 2)} ºC**")
     st.caption(f"{temperatura} ºF convertidos a Celsius")
-    
+elif modo == "Kelvin a Celsius":
+    resultado = temperatura - 273.15
+    st.success(f"**{round(resultado, 2)} ºC**")
+    st.caption(f"{temperatura} K convertidos a Celsius")
+elif modo == "Celsius a Kelvin":
+    resultado = temperatura + 273.15
+    st.success(f"**{round(resultado, 2)} K**")
+    st.caption(f"{temperatura} ºC convertidos a Kelvin")
