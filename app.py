@@ -22,4 +22,4 @@ elif modo == "Celsius a Kelvin":
     st.success(f"**{round(resultado, 2)} K**")
     st.caption(f"{temperatura} ºC convertidos a Kelvin")
 
-st.caption("Made with Streamlit")
+st.caption("Hecho con Streamlit - Conversor de Temperatura")
